@@ -24,6 +24,5 @@
       },
       "continue": true
     }
-  ],
-  "rewrites": [{"source": "/(.*)", "destination": "/"}]
+  ]
 }
