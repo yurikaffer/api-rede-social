@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Param, Post, UseGuards } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
 import { LikeService } from "./like.service";
-import { CreateLikeDto } from "src/Like/dto/like.dto";
-import { LikesModel } from "src/entitys/likes.entity";
+import { CreateLikeDto } from "./dto/like.dto";
+import { LikesModel } from "../entitys/likes.entity";
 
 @UseGuards(AuthGuard('jwt'))
 @Controller('/api/v1/')

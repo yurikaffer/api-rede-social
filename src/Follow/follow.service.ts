@@ -1,9 +1,9 @@
 import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { UsersService } from "src/users/users.service";
-import { FollowersModel } from "src/entitys/followers.entity";
-import { FollowDto } from "src/Follow/dto/follow.dto";
+import { UsersService } from "../users/users.service";
+import { FollowersModel } from "../entitys/followers.entity";
+import { FollowDto } from "./dto/follow.dto";
 
 @Injectable()
 export class FollowService {

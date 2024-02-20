@@ -1,10 +1,10 @@
 import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { LikesModel } from "src/entitys/likes.entity";
-import { CreateLikeDto } from "src/Like/dto/like.dto";
-import { UsersService } from "src/users/users.service";
-import { PostService } from "src/Post/post.service";
+import { LikesModel } from "../entitys/likes.entity";
+import { CreateLikeDto } from "./dto/like.dto";
+import { UsersService } from "../users/users.service";
+import { PostService } from "../Post/post.service";
 
 @Injectable()
 export class LikeService {

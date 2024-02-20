@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Param, Post, UseGuards } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
 import { CommentService } from "./comment.service";
-import { CreateCommentDto } from "src/Comment/dto/comment.dto";
-import { CommentsModel } from "src/entitys/comments.entity";
+import { CreateCommentDto } from "./dto/comment.dto";
+import { CommentsModel } from "../entitys/comments.entity"; 
 
 @UseGuards(AuthGuard('jwt'))
 @Controller('api/v1/comment')

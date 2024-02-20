@@ -1,4 +1,4 @@
-import { UsersModel } from "src/entitys/users.entity";
+import { UsersModel } from "../entitys/users.entity";
 import { Module } from "@nestjs/common";
 import { UsersService } from "./users.service";
 import { UsersController } from "./users.controller";

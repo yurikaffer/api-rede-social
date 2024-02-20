@@ -1,8 +1,8 @@
-import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Post, UseGuards } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
-import { FollowDto } from "src/Follow/dto/follow.dto";
+import { FollowDto } from "./dto/follow.dto";
 import { FollowService } from "./follow.service";
-import { FollowersModel } from "src/entitys/followers.entity";
+import { FollowersModel } from "../entitys/followers.entity";
 
 @UseGuards(AuthGuard('jwt'))
 @Controller('/api/v1/')

@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from "@nestjs/common";
 import { PostService } from "./post.service";
-import { PostModel } from "src/entitys/post.entity";
-import { PostDto } from "src/Post/dto/post.dto";
+import { PostModel } from "../entitys/post.entity";
+import { PostDto } from "./dto/post.dto";
 import { AuthGuard } from "@nestjs/passport";
 
 @UseGuards(AuthGuard('jwt'))
