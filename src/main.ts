@@ -14,6 +14,6 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type', 'Authorization'], 
   }));
   app.useGlobalPipes(new ValidationPipe());
-  await app.listen(3333);
+  await app.listen(process.env.PORT || 3333);
 }
 bootstrap();
